@@ -1,34 +1,37 @@
-get '/signin/new' do
-  erb :'authentication/signin'
+get '/sign_up/new' do
+  erb :'authorization/sign_up'
 end
 
-post '/signin' do
-  user = User.find_by(username: params[:user][:username])
-  if user && user.authenticate(params[:user][:password])
-    session[:user_id] = user.id
-    redirect '/'
+post '/sign_up' do
+  @user = User.new(
+    first_name:    params[:first_name],
+    last_name:     params[:last_name],
+    phone_number:  params[:phone_number],
+    email:         params[:email],
+    username:      params[:username],
+    password_hash: params[:password]
+  )
+
+  if @user.save
+    session[:user_id] = @user.id
+    redirect "/users/profile"
   else
-    "Invalid username or password. Please try again!"
-    redirect '/signin/new'
+    redirect '/sign_up'
   end
 end
 
-get '/signup/new' do
-  erb :'authentication/signup'
-end
-
-post '/signup' do
-  # user = User.create(params[:user])
-  user = User.new(params[:user])
-  if user.save
+post '/sign_in' do
+  password_hash = params[:password]
+  user = User.find_by(username: params[:username])
+  if user && user.password_hash == password_hash
     session[:user_id] = user.id
-    redirect '/'
+    redirect "/users/profile"
   else
-    "Save error. Please sign up again!"
+    redirect '/'
   end
 end
 
-get '/signout' do
+get '/sign_out' do
   session[:user_id] = nil
   redirect '/'
 end

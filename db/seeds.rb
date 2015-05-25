@@ -63,7 +63,7 @@ end
 # CREATE CALENDER ATTRIBUTES
 #-----------------------------------------------------------------------------
 
-101.times do
+91.times do
 
   p "*" * 50
   p "YEAR IS: #{@year_name}"
@@ -115,7 +115,7 @@ end
       week_calculator
       day_reset
 
-      Calendar.create(date_value: "#{@month_counter}/#{@day_number}/#{@year_name}", name_of_day: @day_name, day_of_week: @day_number_of_week, day_of_month: @day_number, day_of_year: @day_counter, week_of_year: @week_number_of_year, name_of_month: @month_name, month_of_year: @month_number_of_year, year_number: @year_name, type_of_day: @day_type)
+      Calendar.create(date_value: "#{@month_counter}/#{@day_number}/#{@year_name}", name_of_day: @day_name, day_of_week: @day_number_of_week, day_of_month: @day_number, day_of_year: @day_counter, week_of_year: @week_number_of_year, name_of_month: @month_name, month_of_year: @month_counter, year_number: @year_name, type_of_day: @day_type)
 
       day_namer
       @day_name_counter += 1
@@ -166,7 +166,7 @@ end
       week_calculator
       day_reset
 
-      Calendar.create(date_value: "#{@month_counter}/#{@day_number}/#{@year_name}", name_of_day: @day_name, day_of_week: @day_number_of_week, day_of_month: @day_number, day_of_year: @day_counter, week_of_year: @week_number_of_year, name_of_month: @month_name, month_of_year: @month_number_of_year, year_number: @year_name, type_of_day: @day_type)
+      Calendar.create(date_value: "#{@month_counter}/#{@day_number}/#{@year_name}", name_of_day: @day_name, day_of_week: @day_number_of_week, day_of_month: @day_number, day_of_year: @day_counter, week_of_year: @week_number_of_year, name_of_month: @month_name, month_of_year: @month_counter, year_number: @year_name, type_of_day: @day_type)
 
       day_namer
       @day_name_counter += 1

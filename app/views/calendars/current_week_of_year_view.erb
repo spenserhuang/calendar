@@ -1,0 +1,6 @@
+<ul>
+  <% @current_week_of_year_calendar.each do |calendar| %>
+    <li><%= calendar.date_value %></li>
+    <li><%= calendar.day_of_week %></li>
+  <% end %>
+</ul>

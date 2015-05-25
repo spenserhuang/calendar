@@ -1,14 +1,14 @@
 I. MVP User Stories
-  1. Users should be able to sign up
-  2. Users should be able to sign in
-  3. Users should be able to sign out
-  4. Users should be able to see an empty calendar
-  5. Users should be able to create fixed events
-  6. Users should be able to create recurring events
-  7. Users should be able to see their profiles
-  8. Users should be able to update their profiles
-  9. Users should be able to see all fixed holidays
-  10. Users should be able to see all recurring holidays
+  x 1. Users should be able to sign up
+  x 2. Users should be able to sign in
+  x 3. Users should be able to sign out
+  x 4. Users should be able to see an empty calendar
+    5. Users should be able to create fixed events
+    6. Users should be able to create recurring events
+  x 7. Users should be able to see their profiles
+  x 8. Users should be able to update their profiles
+    9. Users should be able to see all fixed holidays
+    10. Users should be able to see all recurring holidays
 
 II. Icebox Features User Stories
   1. Events should notify users at reminder times
