@@ -8,17 +8,17 @@ current_day = current_day.to_i
 current_week  = Date.today.cweek
 current_date_value = "#{current_month}/#{current_day}/#{current_year}"
 
-get '/calendar/current_year' do
+get '/calendars/current_year' do
   @current_year_calendar = Calendar.where(year_number: current_year)
   erb :'/calendars/current_year_view'
 end
 
-get '/calendar/current_month' do
+get '/calendars/current_month' do
   @current_month_calendar = Calendar.where(year_number: current_year, month_of_year: current_month)
   erb :'/calendars/current_month_view'
 end
 
-get '/calendar/current_week' do
+get '/calendars/current_week' do
   @week_calendar_list = []
   @current_day = Calendar.find_by(date_value: current_date_value)
   current_day_id = @current_day.id
@@ -39,7 +39,7 @@ get '/calendar/current_week' do
   erb :'/calendars/current_week_view'
 end
 
-get '/calendar/five_day' do
+get '/calendars/five_day' do
   @current_day = Calendar.find_by(date_value: current_date_value)
   current_day_id = @current_day.id
   @five_day_list = []
@@ -51,12 +51,12 @@ get '/calendar/five_day' do
   erb :'/calendars/five_day_view'
 end
 
-get '/calendar/current_day' do
+get '/calendars/current_day' do
   @current_day_calendar = Calendar.where(year_number: current_year, month_of_year: current_month, day_of_month: current_day)
   erb :'/calendars/current_day_view'
 end
 
-get '/calendar/current_week_of_year' do
+get '/calendars/current_week_of_year' do
   @current_week_of_year_calendar = Calendar.where(year_number: current_year, month_of_year: current_month, week_of_year: current_week)
   erb :'/calendars/current_week_of_year_view'
 end

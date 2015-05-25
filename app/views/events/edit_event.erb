@@ -1,0 +1,11 @@
+<h3>Edit Event</h3>
+
+<form action="/events/<%=@edit_event.id%>" method="post" class="text-bar">
+  <div>Event Title: <input type="text" name="title" value="<%= @edit_event.title%>"></div>
+  <div>Event Description: <textarea name="description" value="<%= @edit_event.description%>"></textarea></div>
+  <div>Event Location: <input type="text" name="title" value="<%= @edit_event.location%>"></div>
+  <div>Event Date: <input type="date" name="event_date_value" value="<%= @edit_event.event_date_value%>"></div>
+  <div>Event Time: <input type="time" name="event_time_value" value="<%= @edit_event.event_time_value%>"></div>
+  <div><input type="hidden" name="_method" value="put"></div>
+  <div><input type="submit"></div>
+</form>

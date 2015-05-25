@@ -21,7 +21,16 @@
   <body>
     <header>
       <%if current_user%>
+        <a href="/calendars/current_year"><button type="button">Current Year</button></a>
+        <a href="/calendars/current_month"><button type="button">Current Month</button></a>
+        <a href="/calendars/current_week"><button type="button">Current Week</button></a>
+        <a href="/calendars/five_day"><button type="button">Five Day</button></a>
+        <a href="/calendars/current_day"><button type="button">Current Day</button></a>
+        <a href="/calendars/current_week_of_year"><button type="button">Current Week of Year</button></a>
+        <a href="/events/new"><button type="button">Create New Event</button></a>
+        <a href="/users/profile"><button type="button">User Profile</button></a>
         <a href="/sign_out"><button type="button">Signout</button></a>
+
       <%end%>
     </header>
 

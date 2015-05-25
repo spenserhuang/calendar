@@ -60,10 +60,10 @@ def week_calculator
 end
 
 #-----------------------------------------------------------------------------
-# CREATE CALENDER ATTRIBUTES
+# CREATE CALENDAR ATTRIBUTES
 #-----------------------------------------------------------------------------
 
-91.times do
+21.times do
 
   p "*" * 50
   p "YEAR IS: #{@year_name}"

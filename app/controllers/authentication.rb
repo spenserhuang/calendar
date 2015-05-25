@@ -14,7 +14,7 @@ post '/sign_up' do
 
   if @user.save
     session[:user_id] = @user.id
-    redirect "/users/profile"
+    redirect "/calendars/current_month"
   else
     redirect '/sign_up'
   end
@@ -25,7 +25,7 @@ post '/sign_in' do
   user = User.find_by(username: params[:username])
   if user && user.password_hash == password_hash
     session[:user_id] = user.id
-    redirect "/users/profile"
+    redirect "/calendars/current_month"
   else
     redirect '/'
   end

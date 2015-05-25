@@ -1,6 +1,10 @@
 <ul>
   <% @current_week_of_year_calendar.each do |calendar| %>
     <li><%= calendar.date_value %></li>
-    <li><%= calendar.day_of_week %></li>
+    <% current_user.events.each do |event| %>
+      <% if event.event_date_value == calendar.date_value %>
+        Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+      <% end %>
+    <% end %>
   <% end %>
 </ul>
