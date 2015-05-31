@@ -1,6 +1,6 @@
 <div  class="wrapper-div">
   <ul>
-    <% @current_day_calendar.each do |calendar| %>
+    <% @chosen_day_calendar.each do |calendar| %>
       <li><%= calendar.date_value %></li>
       <% current_user.events.each do |event| %>
         <% if event.event_date_value == calendar.date_value %>

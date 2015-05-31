@@ -1,12 +1,41 @@
-<h1 class='header'>Welcome to Calendar</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      normalize.css removes cross-browser differences in defaults, e.g.,
+      differences in how form elements appear between Firefox and IE
+      See: http://necolas.github.com/normalize.css/
+    -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/pesticide.css">
 
-<div id="form_layout">
-  <form action='/sign_in' method='post'>
-    <div><input type='text' name='username' placeholder='Username...'></div>
-    <div><input type='password' name='password' placeholder='Password...'></div>
-    <p><input type='submit' value='Sign In'></p>
-    <p class="sign_up"><a href="/sign_up/new"> <button type="button">Sign Up</button></a></p>
-  </form>
-</div>
+    <!--
+      application.css is where you put your styles
+    -->
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/js/application.js"></script>
+
+    <title></title>
+  </head>
+  <header></header>
+  <body>
+    <div id="placeholder"></div>
+    <div id='home_page_welcome'>
+      <h1>Weave</h1>
+    </div>
+    <h5>Elegantly interweaving your social and productive lives</h5>
+
+    <div id="form_layout">
+      <form action='/sign_in' method='post'>
+        <div class='buttons'><input type='text' name='username' placeholder='Username...'></div>
+        <div class='buttons'><input type='password' name='password' placeholder='Password...'></div>
+        <div class="session" id="sign_in"><input type='submit' value='SIGN IN'></div>
+        <div><a href="/sign_up/new"><button type="button" id="sign_up">SIGN UP</button></a></div>
+      </form>
+    </div>
+  </body>
+</html>
 
 

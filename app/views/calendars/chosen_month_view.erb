@@ -18,7 +18,7 @@
         <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday" || @start_of_month == "Wednesday" || @start_of_month == "Tuesday" %>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Monday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -37,7 +37,7 @@
         <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday" || @start_of_month == "Wednesday" %>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Tuesday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -56,7 +56,7 @@
         <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday"%>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Wednesday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -75,7 +75,7 @@
         <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday"%>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Thursday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -94,7 +94,7 @@
         <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" %>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Friday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -113,7 +113,7 @@
         <% if @start_of_month == "Sunday" %>
           <li>&nbsp;</li>
         <% end %>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Saturday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>
@@ -129,7 +129,7 @@
     <div class="name-of-day">
       <ul>
       <h5>Sun</h5>
-        <% @current_month_calendar.each do |calendar| %>
+        <% @chosen_month_calendar.each do |calendar| %>
           <% if calendar.name_of_day == "Sunday" %>
             <li><%= calendar.day_of_month %></li>
             <% current_user.events.each do |event| %>

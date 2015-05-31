@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<body>
+
+  <div class="wrapper-div">
+    <div class="side-bars" >
+
+    </div>
+
+    <div class="main-display">
+
+<!--       <div id="month-name">
+        <ul>
+          <li><h3>Month Name</h3><li>
+        </ul>
+      </div>
+ -->
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Mon</h5>
+          <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday" || @start_of_month == "Wednesday" || @start_of_month == "Tuesday" %>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Monday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+          <h5>Tue</h5>
+          <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday" || @start_of_month == "Wednesday" %>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Tuesday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Wed</h5>
+          <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday" || @start_of_month == "Thursday"%>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Wednesday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Thu</h5>
+          <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" || @start_of_month == "Friday"%>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Thursday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Fri</h5>
+          <% if @start_of_month == "Sunday" || @start_of_month == "Saturday" %>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Friday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Sat</h5>
+          <% if @start_of_month == "Sunday" %>
+            <li>&nbsp;</li>
+          <% end %>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Saturday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="name-of-day">
+        <ul>
+        <h5>Sun</h5>
+          <% @current_month_calendar.each do |calendar| %>
+            <% if calendar.name_of_day == "Sunday" %>
+              <li><%= calendar.day_of_month %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == calendar.date_value %>
+                  <hr>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+<!--       <div id="view-name">
+        <ul>
+          <li><h3>View Name</h3><li>
+        </ul>
+      </div> -->
+
+    </div>
+
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+</body>

@@ -1,0 +1,38 @@
+.wrapper-div {
+  color: #FFFDF2;
+  clear: both;
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h5 {
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.name-of-day {
+  display: inline-table;
+  font-size: 1.9em;
+  font-weight: 100;
+  padding: 2%;
+}
+
+li {
+  margin-top: 35px;
+  margin-bottom: 5%;
+}
+
+hr {
+  margin: 0px;
+  width: 100%;
+  border-color: red;
+}
+

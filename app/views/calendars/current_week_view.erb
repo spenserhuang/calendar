@@ -1,305 +1,360 @@
-<ul>
-  <% if @current_day.name_of_day == "Sunday" %>
-    <li><%= @week_calendar_list[0].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[0].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[1].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[1].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[2].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[2].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[3].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[3].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[4].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[4].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Saturday" %>
-    <li><%= @week_calendar_list[1].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[1].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[2].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[2].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[3].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[3].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[4].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[4].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Friday" %>
-    <li><%= @week_calendar_list[2].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[2].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[3].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[3].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[4].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[4].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[8].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[8].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Thursday" %>
-    <li><%= @week_calendar_list[3].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[3].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[4].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[4].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[8].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[8].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[9].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[9].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Wednesday" %>
-    <li><%= @week_calendar_list[4].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[4].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[8].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[8].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[9].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[9].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[10].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[10].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Tuesday" %>
-    <li><%= @week_calendar_list[5].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[5].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[8].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[8].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[9].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[9].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[10].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[10].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[11].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[11].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% elsif @current_day.name_of_day == "Monday" %>
-    <li><%= @week_calendar_list[6].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[6].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[7].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[7].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[8].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[8].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[9].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[9].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[10].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[10].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[11].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[11].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-    <li><%= @week_calendar_list[12].date_value %></li>
-        <% current_user.events.each do |event| %>
-          <% if event.event_date_value == @week_calendar_list[12].date_value %>
-            Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
-          <% end %>
-        <% end %>
-  <% end %>
-</ul>
+<div class="wrapper-div">
+  <div class="main-display">
 
+    <div class="name-of-day">
+      <ul>
+        <% if @current_day.name_of_day == "Sunday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[0].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[0].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[1].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[1].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[2].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[2].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[3].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[3].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[4].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[4].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Saturday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[1].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[1].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[2].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[2].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[3].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[3].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[4].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[4].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Friday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[2].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[2].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[3].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[3].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[4].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[4].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[8].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[8].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Thursday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[3].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[3].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[4].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[4].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[8].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[8].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[9].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[9].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Wednesday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[4].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[4].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[8].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[8].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[9].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[9].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[10].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[10].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Tuesday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[5].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[5].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[8].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[8].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[9].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[9].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[10].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[10].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[11].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[11].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% elsif @current_day.name_of_day == "Monday" %>
+          <h5>Mon</h5>
+          <li><%= @week_calendar_list[6].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[6].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Tue</h5>
+          <li><%= @week_calendar_list[7].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[7].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Wed</h5>
+          <li><%= @week_calendar_list[8].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[8].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Thu</h5>
+          <li><%= @week_calendar_list[9].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[9].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Fri</h5>
+          <li><%= @week_calendar_list[10].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[10].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sat</h5>
+          <li><%= @week_calendar_list[11].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[11].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+          <h5>Sun</h5>
+          <li><%= @week_calendar_list[12].date_value %></li>
+              <% current_user.events.each do |event| %>
+                <% if event.event_date_value == @week_calendar_list[12].date_value %>
+                  Event: <a href="/events/<%=event.id%>"><%= event.title %></a>
+                <% end %>
+              <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
